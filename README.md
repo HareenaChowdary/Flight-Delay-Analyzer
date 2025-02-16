@@ -12,8 +12,13 @@ Air travel delays impact millions of passengers worldwide. **Flight Delay Analyz
 
 ## 🔍 Dataset  
 The dataset used is from **2018 U.S. flight records**, containing flight details such as departure and arrival times, airline carrier, delay reasons, and distances.  
+[2018.csv](https://www.kaggle.com/datasets/sherrytp/airline-delay-analysis/data)
 
-📂 **Source:** U.S. Department of Transportation  
+📂 **Source:** U.S. Department of Transportation
+**Purpose:** Tracks on-time performance, delays, cancellations, and diversions of domestic flights operated by large air carriers.
+**Volume:**
+  - 7.2+ million observations.
+  - 28 attributes covering performance, timing, and reasons for delays.
 
 ## 📦 Tech Stack  
 🔹 **R** (for data manipulation, visualization, and modeling)  
@@ -38,10 +43,17 @@ source("flight_delay_analysis.R")
 ```
 
 ## 📈 Results & Insights  
-📌 **Which airlines have the highest delays?**  
-📌 **What time of the day experiences the most delays?**  
-📌 **How do weather and distance affect flight delays?**  
-📌 **Can machine learning predict significant arrival delays?**  
+ **- Airlines with Highest Delays:** Frontier Airlines **(F9)** had the longest delays, while Alaska Airlines **(AS)** performed better.
+ 
+ **- Time of Day & Delays:** Delays increase throughout the day, with **evening flights (after 6 PM)** experiencing the most delays.
+ 
+ **- Weather & Distance Impact:** Weather had minimal impact on delays, while **short-haul flights** faced more frequent disruptions than long-haul flights.
+ 
+ **- Predictive Model Performance:**
+ 
+     - **Accuracy:** 95% | **Precision:** 94% | **F1-score:** 98% | **AUC:** 0.99
+     
+     - **Departure delay** was the strongest predictor, followed by **taxi-out time** and distance
 
 ## 🏆 Future Enhancements  
 ✔️ Incorporate more advanced machine learning models (Random Forest, XGBoost).  
@@ -57,5 +69,4 @@ Contributions are welcome! Fork the repository, create a new branch, and submit 
 
 ## ⭐ Show Your Support  
 If you found this project useful, give it a ⭐ on GitHub!  
-```
 
